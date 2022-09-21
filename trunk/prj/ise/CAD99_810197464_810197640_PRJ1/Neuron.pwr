@@ -1,0 +1,189 @@
+-------------------------------------------------------------------------------------------------------------------------------------------
+|                                                         Xilinx XPower Analyzer                                                          |
+-------------------------------------------------------------------------------------------------------------------------------------------
+| Release                | 14.7 - P.20131013 (nt64)                                                                                       |
+| Command Line           | F:\xlnx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\xpwr.exe -intstyle ise -ol std Neuron.ncd Neuron.pcf -o Neuron.pwr  |
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------
+|      Table of Contents       |
+--------------------------------
+| 1.  Settings                 |
+| 1.1.  Project                |
+| 1.2.  Device                 |
+| 1.3.  Environment            |
+| 1.4.  Default Activity Rates |
+| 2.  Summary                  |
+| 2.1.  On-Chip Power Summary  |
+| 2.2.  Thermal Summary        |
+| 2.3.  Power Supply Summary   |
+| 2.4.  Confidence Level       |
+| 3.  Detailed Reports         |
+| 3.1.  By Hierarchy           |
+| 4.  Warnings                 |
+--------------------------------
+
+1.  Settings
+1.1.  Project
+------------------------------------------
+|                Project                 |
+------------------------------------------
+| Design File               | Neuron.ncd |
+| Settings File             | NA         |
+| Physical Constraints File | Neuron.pcf |
+| Simulation Activity File  | NA         |
+| Design Nets Matched       | NA         |
+| Simulation Nets Matched   | NA         |
+------------------------------------------
+
+1.2.  Device
+--------------------------------------------------
+|                     Device                     |
+--------------------------------------------------
+| Family           | Artix7                      |
+| Part             | xa7a100t                    |
+| Package          | csg324                      |
+| Temp Grade       | Industrial                  |
+| Process          | Typical                     |
+| Speed Grade      | -2I                         |
+| Characterization | Preliminary,v1.0,2012-07-11 |
+--------------------------------------------------
+
+1.3.  Environment
+--------------------------------------------
+|               Environment                |
+--------------------------------------------
+| Ambient Temp (C)      | 25.0             |
+| Use custom TJA?       | No               |
+| Custom TJA (C/W)      | NA               |
+| Airflow (LFM)         | 250              |
+| Heat Sink             | Medium Profile   |
+| Custom TSA (C/W)      | NA               |
+| Board Selection       | Medium (10"x10") |
+| # of Board Layers     | 12 to 15         |
+| Custom TJB (C/W)      | NA               |
+| Board Temperature (C) | NA               |
+--------------------------------------------
+
+1.4.  Default Activity Rates
+----------------------------------
+|     Default Activity Rates     |
+----------------------------------
+| FF Toggle Rate (%)     | 12.5  |
+| I/O Toggle Rate (%)    | 12.5  |
+| Output Load (pF)       | 5.0   |
+| I/O Enable Rate (%)    | 100.0 |
+| BRAM Write Rate (%)    | 50.0  |
+| BRAM Enable Rate (%)   | 50.0  |
+| DSP Toggle Rate (%)    | 12.5  |
+----------------------------------
+
+2.  Summary
+2.1.  On-Chip Power Summary
+-----------------------------------------------------------------------------
+|                           On-Chip Power Summary                           |
+-----------------------------------------------------------------------------
+|        On-Chip        | Power (mW) |  Used  | Available | Utilization (%) |
+-----------------------------------------------------------------------------
+| Clocks                |       0.00 |      3 |    ---    |       ---       |
+| Logic                 |       0.00 |    226 |     63400 |               0 |
+| Signals               |       0.00 |    302 |    ---    |       ---       |
+| IOs                   |       0.00 |     38 |       210 |              18 |
+| Static Power          |      82.16 |        |           |                 |
+| Total                 |      82.16 |        |           |                 |
+-----------------------------------------------------------------------------
+
+2.2.  Thermal Summary
+------------------------------
+|      Thermal Summary       |
+------------------------------
+| Effective TJA (C/W) | 4.6  |
+| Max Ambient (C)     | 99.6 |
+| Junction Temp (C)   | 25.4 |
+------------------------------
+
+2.3.  Power Supply Summary
+---------------------------------------------------------
+|                 Power Supply Summary                  |
+---------------------------------------------------------
+|                      | Total | Dynamic | Static Power |
+---------------------------------------------------------
+| Supply Power (mW)    | 82.16 | 0.00    | 82.16        |
+---------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+|                                            Power Supply Currents                                            |
+---------------------------------------------------------------------------------------------------------------
+|     Supply Source     | Supply Voltage | Total Current (mA) | Dynamic Current (mA) | Quiescent Current (mA) |
+---------------------------------------------------------------------------------------------------------------
+| Vccint                |          1.000 |              16.74 |                 0.00 |                  16.74 |
+| Vccaux                |          1.800 |              13.15 |                 0.00 |                  13.15 |
+| Vcco18                |          1.800 |               4.00 |                 0.00 |                   4.00 |
+| Vccbram               |          1.000 |               0.35 |                 0.00 |                   0.35 |
+| Vccadc                |          1.710 |              20.00 |                 0.00 |                  20.00 |
+---------------------------------------------------------------------------------------------------------------
+
+2.4.  Confidence Level
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                Confidence Level                                                                                                |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       User Input Data       | Confidence |                    Details                     |                                                       Action                                                       |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Design implementation state | High       | Design is completely routed                    |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks         | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                                    |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | Medium     | Device models are not Production               | Device models may change and in turn slightly affect accuracy                                                      |
+|                             |            |                                                |                                                                                                                    |
+| Overall confidence level    | Low        |                                                |                                                                                                                    |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.  Details
+3.1.  By Hierarchy
+----------------------------------------------------------------------------------------------------------------------------------------
+|        By Hierarchy        | Power (mW) | Logic Power (mW) | Signal Power (mW) |      # FFs      |     # LUTs      |    # CARRY4s    |
+----------------------------------------------------------------------------------------------------------------------------------------
+| Hierarchy total            |   0.00     |   0.00           |   0.00            |     63          |    183          |     24          |
+|   Neuron                   |   0.00     |   0.00           |   0.00            |      0 /     63 |      0 /    183 |      0 /     24 |
+|     datapath_0             |   0.00     |   0.00           |   0.00            |      0 /     51 |      1 /    171 |      0 /     22 |
+|       RegisterM_0          |   0.00     |   0.00           |   0.00            |     18          |      0          |      0          |
+|       Register8_1          |   0.00     |   0.00           |   0.00            |     16          |      0          |      0          |
+|       Register8_0          |   0.00     |   0.00           |   0.00            |     15          |      0          |      0          |
+|       Multipler8_1_0       |   0.00     |   0.00           |   0.00            |      0 /      1 |      0 /     84 |      0 /      6 |
+|         UMultipler8_1_0    |   0.00     |   0.00           |   0.00            |      1          |     70 /     84 |      6          |
+|           multiplier4_1    |   0.00     |   0.00           |   0.00            |      0          |      0 /      4 |      0          |
+|             multiplier2_2  |   0.00     |   0.00           |   0.00            |      0          |      2          |      0          |
+|             multiplier2_0  |   0.00     |   0.00           |   0.00            |      0          |      2          |      0          |
+|           multiplier4_0    |   0.00     |   0.00           |   0.00            |      0          |      2 /      7 |      0          |
+|             multiplier2_2  |   0.00     |   0.00           |   0.00            |      0          |      3          |      0          |
+|             multiplier2_0  |   0.00     |   0.00           |   0.00            |      0          |      2          |      0          |
+|           multiplier4_3    |   0.00     |   0.00           |   0.00            |      0          |      1 /      3 |      0          |
+|             multiplier2_0  |   0.00     |   0.00           |   0.00            |      0          |      2          |      0          |
+|       Adder16_0            |   0.00     |   0.00           |   0.00            |      1          |     82          |     16          |
+|       ActivationFunction_0 |   0.00     |   0.00           |   0.00            |      0          |      4          |      0          |
+|     Controller_0           |   0.00     |   0.00           |   0.00            |     12          |     12          |      2          |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+4.  Warnings
+--------------------------------------------------------------------------------
+WARNING:PowerEstimator:270 - Power estimate is considered inaccurate. To see details, generate an advanced report with the "-v" switch.
+WARNING:Power:1337 - Clock frequency for clock net "clk_BUFGP" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "clk_BUFGP/IBUFG" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "datapath_0/ActivationFunction_0/GND_13_o_in[17]_LessThan_2_o" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "datapath_0/Adder16_0/a[15]_b[14]_OR_2_o" is zero.
+WARNING:Power:1369 - Clock frequency for one or more clocks was not found through
+timing constraints (PCF file) or simulation data.  Without knowing the
+clock frequency of all clocks, dynamic power information for those clock
+domains will default to zero which may under-estimate the power for this
+design.  To avoid this warning, provide at least one of the following:
+  1. The proper timing constraints (PERIOD) for clocks (re-implement design
+     and load the newly generated PCF file into XPower Analyzer)
+  2. A post PAR simulation-generated VCD or SAIF file indicating clock
+     frequencies
+  3. The clock frequency for clocks in the "By Type -> Clocks" view in the
+     XPower Analyzer GUI and then applying "Update Power Analysis"
+--------------------------------------------------------------------------------
+
+Analysis completed: Wed Dec 23 22:23:33 2020
+----------------------------------------------------------------

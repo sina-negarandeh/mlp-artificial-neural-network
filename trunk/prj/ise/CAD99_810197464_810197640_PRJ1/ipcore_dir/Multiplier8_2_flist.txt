@@ -1,0 +1,15 @@
+# Output products list for <Multiplier8_2>
+Multiplier8_2.asy
+Multiplier8_2.gise
+Multiplier8_2.ngc
+Multiplier8_2.sym
+Multiplier8_2.v
+Multiplier8_2.veo
+Multiplier8_2.xco
+Multiplier8_2.xise
+Multiplier8_2\doc\mult_gen_ds255.pdf
+Multiplier8_2\doc\mult_gen_v11_2_readme.txt
+Multiplier8_2\doc\mult_gen_v11_2_vinfo.html
+Multiplier8_2_flist.txt
+Multiplier8_2_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

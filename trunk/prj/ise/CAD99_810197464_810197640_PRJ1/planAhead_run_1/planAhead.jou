@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Dec 23 21:53:30 2020
+# Process ID: 5712
+# Log file: F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/planAhead_run_1/planAhead.log
+# Journal file: F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/pa.fromNcd.tcl

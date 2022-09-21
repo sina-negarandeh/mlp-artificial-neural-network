@@ -1,0 +1,80 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from F:/xlnx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [F:/xlnx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [F:/xlnx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/pa.fromNcd.tcl
+# create_project -name CAD99_810197464_810197640_PRJ1 -dir "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/planAhead_run_3" -part xa7a100tcsg324-2I
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1} {ipcore_dir} }
+# add_files [list {ipcore_dir/Multiplier8_2.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "Neuron.ucf" [current_fileset -constrset]
+Adding file 'F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.ucf' to fileset 'constrs_1'
+# add_files [list {Neuron.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xa7a100tcsg324-2I
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Neuron.ngc ...
+WARNING:NetListWriters:298 - No output is written to Neuron.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   datapath_0/Multipler8_1_0/UMultipler8_1_0/ADDERTREE_INTERNAL_Madd10_lut<5 :
+   2> on block Neuron is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   datapath_0/Multipler8_1_0/UMultipler8_1_0/multiplier4_0/mult2_out2<3 : 0> on
+   block Neuron is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file Neuron.edif ...
+ngc2edif: Total memory usage is 76292 kilobytes
+
+Parsing EDIF File [./planAhead_run_3/CAD99_810197464_810197640_PRJ1.data/cache/Neuron_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_3/CAD99_810197464_810197640_PRJ1.data/cache/Neuron_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from F:/xlnx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/aartix7/xa7a100t/ClockRegion.xml
+Loading clock buffers from F:/xlnx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/aartix7/xa7a100t/ClockBuffers.xml
+Loading clock placement rules from F:/xlnx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from F:/xlnx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from F:/xlnx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/aartix7/xa7a100t/csg324/Package.xml
+Loading io standards from F:/xlnx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from F:/xlnx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : F:/xlnx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+Parsing UCF File [F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.ucf]
+Finished Parsing UCF File [F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+  FDC => FDCE: 3 instances
+  FDP => FDPE: 1 instances
+  LD => LDCE: 1 instances
+  LDC => LDCE: 18 instances
+
+Phase 0 | Netlist Checksum: db28f315
+link_design: Time (s): elapsed = 00:00:20 . Memory (MB): peak = 770.984 ; gain = 308.738
+# read_xdl -file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xdl"
+INFO: [Designutils 20-669] Parsing Placement File : F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xdl
+INFO: [Designutils 20-671] Placed 432 instances
+read_xdl: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 787.188 ; gain = 11.801
+# if {[catch {read_twx -name results_1 -file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.twx\": $eInfo"
+# }
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Dec 23 22:49:08 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead

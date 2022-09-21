@@ -1,0 +1,70 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'Multiplier8_2'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+WARNING:sim - A core named 'Multiplier8_2' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'Multiplier8_2'...
+Delivering associated files for 'Multiplier8_2'...
+Generating implementation netlist for 'Multiplier8_2'...
+INFO:sim - Pre-processing HDL files for 'Multiplier8_2'...
+Running synthesis for 'Multiplier8_2'
+Running ngcbuild...
+Writing VEO instantiation template for 'Multiplier8_2'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Writing Verilog structural simulation model for 'Multiplier8_2'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Delivered 3 files into directory
+F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ipcore_dir
+/tmp/_cg/Multiplier8_2
+Delivered 1 file into directory
+F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ipcore_dir
+/tmp/_cg/Multiplier8_2
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'Multiplier8_2'...
+Generating metadata file...
+Regenerating ISE project file for 'Multiplier8_2'...
+Generating ISE project...
+XCO file found: Multiplier8_2.xco
+XMDF file found: Multiplier8_2_xmdf.tcl
+Adding
+F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ipcore_dir
+/tmp/_cg/Multiplier8_2.asy -view all -origin_type imported
+Adding
+F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ipcore_dir
+/tmp/_cg/Multiplier8_2.ngc -view all -origin_type created
+Checking file
+"F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ipcore_di
+r/tmp/_cg/Multiplier8_2.ngc" for project device match ...
+File
+"F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ipcore_di
+r/tmp/_cg/Multiplier8_2.ngc" device information matches project device.
+Adding
+F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ipcore_dir
+/tmp/_cg/Multiplier8_2.sym -view all -origin_type imported
+Adding
+F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ipcore_dir
+/tmp/_cg/Multiplier8_2.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ipcore
+   _dir/tmp/_cg/Multiplier8_2.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ipcore_dir
+/tmp/_cg/Multiplier8_2.veo -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/Multiplier8_2"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'Multiplier8_2'.

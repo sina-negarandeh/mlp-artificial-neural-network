@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/test_bench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_bench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/test_bench/label" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">label[7:0]</obj_property>
+      <obj_property name="ObjectShortName">label[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/accuracy" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">accuracy[31:0]</obj_property>
+      <obj_property name="ObjectShortName">accuracy[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/num_of_corrects" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num_of_corrects[31:0]</obj_property>
+      <obj_property name="ObjectShortName">num_of_corrects[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/j" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/reshaped_test_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reshaped_test_data[495:0]</obj_property>
+      <obj_property name="ObjectShortName">reshaped_test_data[495:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/wh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wh[1239:0,7:0]</obj_property>
+      <obj_property name="ObjectShortName">wh[1239:0,7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/reshaped_wh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reshaped_wh[9919:0]</obj_property>
+      <obj_property name="ObjectShortName">reshaped_wh[9919:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/wo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wo[199:0,7:0]</obj_property>
+      <obj_property name="ObjectShortName">wo[199:0,7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/reshaped_wo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reshaped_wo[1599:0]</obj_property>
+      <obj_property name="ObjectShortName">reshaped_wo[1599:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/bh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bh[19:0,7:0]</obj_property>
+      <obj_property name="ObjectShortName">bh[19:0,7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/reshaped_bh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reshaped_bh[159:0]</obj_property>
+      <obj_property name="ObjectShortName">reshaped_bh[159:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/bo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bo[9:0,7:0]</obj_property>
+      <obj_property name="ObjectShortName">bo[9:0,7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_bench/reshaped_bo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reshaped_bo[79:0]</obj_property>
+      <obj_property name="ObjectShortName">reshaped_bo[79:0]</obj_property>
+   </wvobject>
+</wave_config>

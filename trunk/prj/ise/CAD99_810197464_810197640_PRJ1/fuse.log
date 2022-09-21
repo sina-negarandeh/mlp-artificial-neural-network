@@ -1,0 +1,50 @@
+Running: F:\xlnx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/test_bench_isim_beh.exe -prj F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/test_bench_beh.prj work.test_bench work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Saturation.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Register8.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Register21.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Multipler8_1.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Adder16.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/ActivationFunction.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/datapath.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Controller.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNdatapath.v" into library work
+WARNING:HDLCompiler:248 - "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNdatapath.v" Line 64: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNdatapath.v" Line 104: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNdatapath.v" Line 112: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNdatapath.v" Line 120: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNdatapath.v" Line 128: Block identifier is required on this block
+WARNING:HDLCompiler:991 - "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNdatapath.v" Line 42: Event expressions must result in a singular type
+WARNING:HDLCompiler:991 - "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNdatapath.v" Line 66: Event expressions must result in a singular type
+WARNING:HDLCompiler:991 - "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNdatapath.v" Line 85: Event expressions must result in a singular type
+WARNING:HDLCompiler:991 - "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNdatapath.v" Line 136: Event expressions must result in a singular type
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NNController.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/NeuralNetwork.v" into library work
+Analyzing Verilog file "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/test_bench.v" into library work
+Analyzing Verilog file "F:/xlnx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Register8
+Compiling module Multipler8_1
+Compiling module Adder16
+Compiling module Register21
+Compiling module ActivationFunction
+Compiling module saturation
+Compiling module datapath
+Compiling module Controller
+Compiling module Neuron
+Compiling module NNDatapath
+Compiling module NNController
+Compiling module NN
+Compiling module test_bench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+Compiled 14 Verilog Units
+Built simulation executable F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/test_bench_isim_beh.exe
+Fuse Memory Usage: 29808 KB
+Fuse CPU Usage: 499 ms

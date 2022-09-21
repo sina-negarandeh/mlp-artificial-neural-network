@@ -1,0 +1,40 @@
+xst -intstyle ise -ifn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xst" -ofn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xa7a100t-csg324-2I Neuron.ngc Neuron.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Neuron_map.ncd Neuron.ngd Neuron.pcf 
+par -w -intstyle ise -ol high -mt off Neuron_map.ncd Neuron.ncd Neuron.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml Neuron.twx Neuron.ncd -o Neuron.twr Neuron.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Neuron.ngc Neuron_synthesis.v 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim Neuron.ngd Neuron_translate.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Neuron.ucf -p xa7a100t-csg324-2I Neuron.ngc Neuron.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Neuron_map.ncd Neuron.ngd Neuron.pcf 
+par -w -intstyle ise -ol high -mt off Neuron_map.ncd Neuron.ncd Neuron.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml Neuron.twx Neuron.ncd -o Neuron.twr Neuron.pcf -ucf Neuron.ucf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml Neuron_preroute.twx Neuron_map.ncd -o Neuron_preroute.twr Neuron.pcf -ucf Neuron.ucf 
+netgen -intstyle ise -s 2I  -pcf Neuron.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim Neuron_map.ncd Neuron_map.v 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim Neuron.ngd Neuron_translate.v 
+xpwr -intstyle ise -ol std Neuron.ncd Neuron.pcf -o Neuron.pwr 
+xst -intstyle ise -ifn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xst" -ofn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.syr" 
+xst -intstyle ise -ifn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xst" -ofn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.syr" 
+xst -intstyle ise -ifn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xst" -ofn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.syr" 
+xst -intstyle ise -ifn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xst" -ofn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.syr" 
+xst -intstyle ise -ifn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xst" -ofn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Neuron.ngc Neuron_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Neuron.ucf -p xa7a100t-csg324-2I Neuron.ngc Neuron.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Neuron_map.ncd Neuron.ngd Neuron.pcf 
+par -w -intstyle ise -ol high -mt off Neuron_map.ncd Neuron.ncd Neuron.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml Neuron.twx Neuron.ncd -o Neuron.twr Neuron.pcf -ucf Neuron.ucf 
+xst -intstyle ise -ifn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xst" -ofn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Neuron.ucf -p xa7a100t-csg324-2I Neuron.ngc Neuron.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Neuron_map.ncd Neuron.ngd Neuron.pcf 
+par -w -intstyle ise -ol high -mt off Neuron_map.ncd Neuron.ncd Neuron.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml Neuron.twx Neuron.ncd -o Neuron.twr Neuron.pcf -ucf Neuron.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Neuron.ngc Neuron_synthesis.v 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml Neuron_preroute.twx Neuron_map.ncd -o Neuron_preroute.twr Neuron.pcf -ucf Neuron.ucf 
+netgen -intstyle ise -s 2I  -pcf Neuron.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim Neuron_map.ncd Neuron_map.v 
+xst -intstyle ise -ifn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xst" -ofn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.syr" 
+xst -intstyle ise -ifn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xst" -ofn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.syr" 
+xst -intstyle ise -ifn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.xst" -ofn "F:/amin/CAD99_810197464_810197640_PRJ1/CAD99_810197464_810197640_PRJ1/Neuron.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Neuron.ucf -p xa7a100t-csg324-2I Neuron.ngc Neuron.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Neuron_map.ncd Neuron.ngd Neuron.pcf 
+par -w -intstyle ise -ol high -mt off Neuron_map.ncd Neuron.ncd Neuron.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml Neuron.twx Neuron.ncd -o Neuron.twr Neuron.pcf -ucf Neuron.ucf 
